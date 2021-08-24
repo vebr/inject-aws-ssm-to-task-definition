@@ -17,10 +17,10 @@ jobs:
     - name: Package
       run: |
         npm ci
-        npm test
         npm run package
     - name: Commit
       run: |
+        git config --global user.name "GitHub Actions"
         git add dist/
         git commit -m "chore: Update dist" || echo "No changes to commit"
         git push origin HEAD:master
