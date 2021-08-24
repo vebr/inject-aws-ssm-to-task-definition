@@ -1,0 +1,38 @@
+{
+  "name": "inject-aws-ssm-to-task-definition",
+  "version": "1.0.23",
+  "description": "Render Amazon ECS task definition file",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint **.js",
+    "package": "ncc build index.js -o dist",
+    "test": "eslint **.js && jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aws-actions/amazon-ecs-render-task-definition.git"
+  },
+  "keywords": [
+    "AWS",
+    "GitHub",
+    "Actions",
+    "JavaScript"
+  ],
+  "author": "AWS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aws-actions/amazon-ecs-render-task-definition/issues"
+  },
+  "homepage": "https://github.com/aws-actions/amazon-ecs-render-task-definition#readme",
+  "dependencies": {
+    "@actions/core": "^1.4.0",
+    "tmp": "^0.2.1",
+    "aws-sdk": "^2.969.0",
+    "yaml": "^1.10.2"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.3",
+    "eslint": "^7.32.0",
+    "jest": "^27.0.6"
+  }
+}
